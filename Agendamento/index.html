@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: gray;">
+
+	<!-- OPEN Navegation Bar -->
+
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">
+    <img src="logo1.png" alt="logo" style="width:70px;">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Agendamento</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sobre nós</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Produtos</a>
+      </li>    
+      <li class="nav-item">
+        <a class="nav-link" href="#">Entrar</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<br>
+
+	<!-- CLOSE Navegation Bar -->
+
+	<!--OPEN OVERALL -->
+
+<div class="container">
+
+	<section id="pag-agendamentos">
+
+		<h1>Agendamentos</h1>
+
+	</section>
+
+	<p>Agende seu horario agora mesmo!</p>
+	<br>
+
+	<form class="form" method="POST" action="./email.php">
+		<label for="nome">Nome:</label>
+		<input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" required autofocus />
+
+		<label for="celular">Celular:</label>
+		<input id="celular" type="tel" name="celular" placeholder="(99) 99999-9999" />
+
+		<div id="data-hora">
+			<div>
+				<label for="data">Data:</label>
+				<input id="data" type="date" name="data" />
+			</div>
+			<div>
+				<label for="hora">Hora</label>
+				<input id="hora" type="time" name="hora" />
+			</div>
+		</div>
+
+		<label for="funcionario">Funcionário:</label>
+		<select id="funcionario" name="funcionario">
+			<option value="">Qualquer pessoa</option>
+			<option value="douglas">Douglas</option>
+			<option value="pedro">Pedro</option>
+			<option value="carlos">Carlos</option>
+		</select><br>
+
+		<fieldset class="fieldset">
+			<legend>Serviços</legend>
+			<input id="corte" type="checkbox" name="serviços" value="corte" /> <label for="">Corte 25$</label><br>
+			<input id="cortebarba" type="checkbox" name="serviços" value="cortebarba" /> <label for="">Corte + barba 35$</label><br>
+			<input id="sobrancelha" type="checkbox" name="serviços" value="sobrancelha" /> <label for="">Sobrancelha 15$</label><br>
+		</fieldset>
+
+		<div id="botoes-form">
+			<input type="submit" name="agendar" value="AGENDAR" />
+			<input type="reset" name="cancelar" value="CANCELAR" />
+		</div>
+
+		<!-- CLOSE OVERALL -->
+
+	</form>
+	<br>
+	<br>
+	<br>
+</body>
+</html>
+
