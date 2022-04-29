@@ -1,0 +1,102 @@
+/** geral **/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Oxygen",sans-serif;
+    box-sizing: border-box;
+}
+
+.background {
+    background-color: rgb(236, 235, 235);
+}
+/** geral **/
+
+/** conteudo **/
+.conteudo{
+    min-height: 100vh;
+    display: flex;
+    background-color: rgb(236, 235, 235);
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section{
+    background: url(Images/image\ 1\ \(1261x1261\).jpg) no-repeat left;
+    background-size: 55%;
+    background-color: rgb(236, 235, 235);
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.about-section2{
+    background: url(Images/image\ 2\ \(1261x1261\).jpg) no-repeat right;
+    background-size: 55%;
+    background-color: rgb(236, 235, 235);
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.about-section3{
+    background: url(Images/image\ 3\ \(original\).jpg) no-repeat left;
+    background-size: 55%;
+    background-color: rgb(236, 235, 235);
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container, .inner-container3{
+    width: 55%;
+    float: right;
+    background-color: #f8ffd0;
+    padding: 150px;
+}
+
+.inner-container2{
+    width: 55%;
+    float: left;
+    background-color: #f8ffd0;
+    padding: 150px;
+}
+
+.inner-container h1, .inner-container2 h1, .inner-container3 h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+}
+
+.text{
+    font-size: 13px;
+    color: #000000;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+/** conteudo **/
+
+/** responsivo **/
+@media screen and (max-width:1200px){
+    .inner-container, .inner-container2, .inner-container3{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section, .about-section2, .about-section3{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container, .inner-container2, .inner-container3{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section, .about-section2, .about-section3{
+        padding: 0;
+    }
+    .inner-container, .inner-container2, .inner-container3{
+        padding: 60px;
+    }
+}
+/** responsivo **/
