@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="css/homestyle.css">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/produtosstyle.css">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/produtos.js" defer></script>
+<script>
+function funcao1()
+{
+alert("Item Adicionado ao carrinho!");
+}
+</script>
+    <title>Produtos</title>
+</head>
+
+<body style="background-color:#fcd12a" class="fadeIn">
+
+    <!-- OPEN Nav Bar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                 <a class="navbar-brand" href="#" style="color: white; font-family: 'Oxygen';font-family: 'Oxygen', cursive; font-size: 30px; height: 50%;">
+            <a href="index.html"> <img src="images/logo1.png" alt="logo" style="width:70px;"></a>
+        </a>
+        </a>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="agendamento.html"> Agendamento </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobrenos.html"> Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html"> Produtos </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html"> Entrar </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!--  CLOSE Nav Bar -->
+
+    <!-- OPEN Container -->
+
+    <div class="container">
+
+        <h3 class="title"> Nossos Produtos </h3>
+
+        <div class="products-container">
+
+            <div class="product" data-name="p-1">
+
+                <img src="images/Produtos/product1.png" alt="">
+                <h3>Kit de Produtos Regis Desing</h3>
+                <div class="price">R$ 150,00</div>
+            </div>
+
+            <div class="product" data-name="p-2">
+                <img src="images/Produtos/product2.png" alt="">
+                <h3>Kit de Produtos RedKen</h3>
+                <div class="price">R$ 150,00</div>
+            </div>
+
+            <div class="product" data-name="p-3">
+                <img src="images/Produtos/product3.png" alt="">
+                <h3>Shampoo Dry</h3>
+                <div class="price">R$ 25,00</div>
+            </div>
+
+            <div class="product" data-name="p-4">
+                <img src="images/Produtos/product4.png" alt="">
+                <h3>Creme de Barbear Revuele</h3>
+                <div class="price">R$ 30,00</div>
+            </div>
+
+            <div class="product" data-name="p-5">
+                <img src="images/Produtos/product5.png" alt="">
+                <h3>Minoxidil Rogaine</h3>
+                <div class="price">R$ 200,00</div>
+            </div>
+
+            <div class="product" data-name="p-6">
+                <img src="images/Produtos/product6.png" alt="">
+                <h3>Pomada Modeladora "Molding Clay"</h3>
+                <div class="price">R$25,00</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CLOSE Container -->
+
+    <!-- OPEN Products Preview -->
+
+    <div class="products-preview">
+
+        <div class="preview" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="images/Produtos/product1.png" alt="">
+            <h3>Kit de Produtos Regis Desing</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>lorem ipsun dolor sit amet consectur adipiscing alit. consequatur, dolorem.</p>
+            <div class="price">R$150,00</div>
+            <div class="buttons">
+                
+                <a href="#" class="buy" onclick="swal('Compra efetuada com sucesso!Um boleto foi enviado ao seu email')">buy now</a>
+                <a href="#" class="cart" onclick="swal('Item adicionado ao carrinho!')">add to cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="images/Produtos/product2.png" alt="">
+            <h3>Kit de Produtos RedKen</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>lorem ipsun dolor sit amet consectur adipiscing alit. consequatur, dolorem.</p>
+            <div class="price">R$150,00</div>
+            <div class="buttons">
+                <a href="#" class="buy" onclick="swal('Compra efetuada com sucesso!Um boleto foi enviado ao seu email')">buy now</a>
+                <a href="#" class="cart" onclick="swal('Item adicionado ao carrinho!')">add to cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <img src="images/Produtos/product3.png" alt="">
+            <h3>Shampoo Dry</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>lorem ipsun dolor sit amet consectur adipiscing alit. consequatur, dolorem.</p>
+            <div class="price">R$25,00</div>
+            <div class="buttons">
+                <a href="#" class="buy" onclick="swal('Compra efetuada com sucesso!Um boleto foi enviado ao seu email')">buy now</a>
+                <a href="#" class="cart" onclick="swal('Item adicionado ao carrinho!')">add to cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <img src="images/Produtos/product4.png" alt="">
+            <h3>Creme de Barbear Revuele</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>lorem ipsun dolor sit amet consectur adipiscing alit. consequatur, dolorem.</p>
+            <div class="price">R$30,00</div>
+            <div class="buttons">
+                <a href="#" class="buy" onclick="swal('Compra efetuada com sucesso!Um boleto foi enviado ao seu email')">buy now</a>
+                <a href="#" class="cart" onclick="swal('Item adicionado ao carrinho!')">add to cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <img src="images/Produtos/product5.png" alt="">
+            <h3>Minoxidil Rogaine</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>lorem ipsun dolor sit amet consectur adipiscing alit. consequatur, dolorem.</p>
+            <div class="price">R$200,00</div>
+            <div class="buttons">
+                <a href="#" class="buy" onclick="swal('Compra efetuada com sucesso!Um boleto foi enviado ao seu email')">buy now</a>
+                <a href="#" class="cart" onclick="swal('Item adicionado ao carrinho!')">add to cart</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <img src="images/Produtos/product6.png" alt="">
+            <h3>Pomada Modeladora "Molding Clay"</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 250 )</span>
+            </div>
+            <p>lorem ipsun dolor sit amet consectur adipiscing alit. consequatur, dolorem.</p>
+            <div class="price">R$25,00</div>
+            <div class="buttons">
+                <a href="#" class="buy" onclick="swal('Compra efetuada com sucesso! Um boleto foi enviado ao seu email')">buy now</a>
+                <a href="#" class="cart" onclick="swal('Item adicionado ao carrinho!')">add to cart</a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- CLOSE Products Preview -->
+
+</body>
+
+</html>

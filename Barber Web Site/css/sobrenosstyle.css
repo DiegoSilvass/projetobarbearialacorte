@@ -1,0 +1,129 @@
+/** geral **/
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Sofia&display=swap');
+* {
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+.background {
+    background-color: #fcd12a
+}
+
+
+/** geral **/
+
+
+/** conteudo **/
+
+.conteudo {
+    min-height: 100vh;
+    display: flex;
+    background-color: #fcd12a;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section {
+    background: url(../images/Sobrenos/image1sobrenos.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fcd12a overflow=hidden;
+    padding: 100px;
+}
+
+.about-section2 {
+    background: url(../images/Sobrenos/image2sobrenos.jpg) no-repeat right;
+    background-size: 55%;
+    background-color: #fcd12a overflow=hidden;
+    padding: 100px 0;
+}
+
+.about-section3 {
+    background: url(../images/Sobrenos/image3sobrenos.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fcd12a overflow=hidden;
+    padding: 100px;
+}
+
+.inner-container,
+.inner-container3 {
+    width: 55%;
+    float: right;
+    background-color: #ffff;
+    padding: 150px;
+}
+
+.inner-container2 {
+    width: 55%;
+    float: left;
+    background-color: #ffff;
+    padding: 150px;
+}
+
+.inner-container h1,
+.inner-container2 h1,
+.inner-container3 h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+}
+
+.text {
+    font-size: 13px;
+    color: #000000;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+/** conteudo **/
+
+
+/** responsivo **/
+
+@media screen and (max-width:1200px) {
+    .inner-container,
+    .inner-container2,
+    .inner-container3 {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-section,
+    .about-section2,
+    .about-section3 {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container,
+    .inner-container2,
+    .inner-container3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-section,
+    .about-section2,
+    .about-section3 {
+        padding: 0;
+    }
+    .inner-container,
+    .inner-container2,
+    .inner-container3 {
+        padding: 60px;
+    }
+}
+
+
+/** responsivo **/

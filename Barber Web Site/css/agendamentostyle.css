@@ -1,0 +1,140 @@
+/** OPEN background image **/
+
+body {
+    background-image: url(../images/Agendamento/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+/** CLOSE background image **/
+
+
+/** OPEN overall **/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Sofia&display=swap');
+h1 {
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+p {
+    font: 1.2rem 'Oxygen', sans-serif;
+    color: #FDA12A;
+    text-align: center;
+    line-height: 30px;
+}
+
+section {
+    padding: 20px;
+}
+
+
+/** CLOSE overall **/
+
+
+/** OPEN página de agendamentos **/
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    border: 1px solid #C4C4C4;
+    font: 1rem 'Oxygen', sans-serif;
+    border-radius: 5px;
+}
+
+label,
+fieldset,
+input,
+select {
+    font: 1rem 'Oxygen', sans-serif;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+}
+
+#data-hora {
+    display: flex;
+}
+
+input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    margin-left: 50px;
+}
+
+#botoes-form {
+    display: flex;
+}
+
+input[type="button"],
+input[type="reset"] {
+    margin: 17px;
+    background-color: #FDA12A;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+input[type="button"]:hover{
+    transform: scale(1.3);
+}
+
+input[type="reset"]:hover{
+    transform: scale(1.3);
+}
+
+
+
+input[type="reset"] {
+    background-color: black;
+}
+
+
+/** CLOSE página de agendamentos **/
+
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 768px) {
+    .img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .img {
+        width: 100%;
+    }
+}
