@@ -8,9 +8,9 @@
     }
     
     #linha-vertical {
-        border-right: 1px solid #fff;
-        margin-top: 3%;
-        float: right;
+        border-right: 0.1px solid #fff;
+        margin-top: 3.02%;
+        float: left;
         max-width: 50%;
     }
     
@@ -21,8 +21,8 @@
     
     #cortekids {
         color: black;
-        text-align: center;
-        font-size: 30px;
+        text-align: left;
+        font-size: 26px;
         font-family: 'Oxygen', sans-serif;
     }
     
@@ -128,4 +128,10 @@
 -moz-animation: fadeIn 1s ease-in-out;
 -o-animation: fadeIn 1s ease-in-out;
 animation: fadeIn 1s ease-in-out;
+}
+img{
+
+}
+.edit{
+    color: white;
 }
